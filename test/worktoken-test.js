@@ -2,7 +2,7 @@ const { expect } = require("chai");
 const { ethers } = require("hardhat");
 const { it } = require("mocha");
 
-describe("CryptoToken tests", function () {
+describe("WorkToken tests", function () {
   it("Checking Supply", async function () {
     const wrk = await ethers.getContractFactory("WorkToken");
     const wrkdeploy = await wrk.deploy(100);
